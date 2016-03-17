@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherCoursController">
+   <children>
+      <SplitPane dividerPositions="0.29740518962075846" layoutY="-1.0" prefHeight="587.0" prefWidth="503.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="listview" layoutY="22.0" prefHeight="585.0" prefWidth="146.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0"  prefHeight="592.0" prefWidth="348.0">
+               <children>
+                  <GridPane layoutY="6.0" prefHeight="310.0" prefWidth="349.0" AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Description" GridPane.rowIndex="1" />
+                        <Label text="Date debut" GridPane.rowIndex="2" />
+                        <Label text="Date fin" GridPane.rowIndex="3" />
+                        <Label prefHeight="17.0" prefWidth="150.0" text="Difficulté d'apprentissage" GridPane.rowIndex="4" />
+                        <Label text="Catégorie" GridPane.rowIndex="5" />
+                        <Label fx:id="labtitre" text="-" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labdescriptions" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labdatedebut" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labdatefin" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labcatégorie" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Titre" />
+                        <Label fx:id="labdifficulte" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.3333740234375" minWidth="10.0" prefWidth="139.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="474.9999694824219" minWidth="10.0" prefWidth="210.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Button layoutX="126.0" layoutY="519.0" mnemonicParsing="false" onAction="#btnsupprimer" prefHeight="25.0" prefWidth="72.0" text="supprimer" />
+                  <Button layoutX="198.0" layoutY="519.0" mnemonicParsing="false" onAction="#AjouterAction" prefHeight="25.0" prefWidth="72.0" text="Ajouter" />
+                  <Button layoutX="270.0" layoutY="518.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="25.0" prefWidth="72.0" text="Modifier" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
